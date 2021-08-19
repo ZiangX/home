@@ -231,7 +231,7 @@
 
 				.mobile-advanced > ul > li.current > a,
 				.mobile-advanced > ul > li:hover > a{
-					background-color: #b01933;
+					background-color: #aec186;
 				}
 
 				.mobile-advanced .sub-menu-wrap.mega-menu .col:not(:first-child) .mega-title{
@@ -291,7 +291,7 @@
 		    line-height: 38px;
 		}
 
-		#advanced-menu-hide:hover{color: #b01933;}
+		#advanced-menu-hide:hover{color: #aec186;}
 
 		.sub-menu-wrap.mega-menu .mega-title{
 			padding-top: 13px;

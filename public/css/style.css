@@ -549,7 +549,7 @@ button{
 }
 
 a.link-text:hover{
-  color: #b01933!important;
+  color: #aec186!important;
 }
 
 [class^="icon-"]:before, 
@@ -590,7 +590,7 @@ h5.title:not(:last-child){
 }
 
 .color2{
-  color: #b01933;
+  color: #aec186;
 }
 
 .pre-title:not(:last-child){
@@ -1975,7 +1975,7 @@ button.search-button:before{content: "\e922";}
   .page-404-section .title{
     font-size: 400px;
     line-height: 270px;
-    color: #b01933;
+    color: #aec186;
   }
 
   .page-404-section .title:not(:last-child){
@@ -2004,7 +2004,7 @@ button.search-button:before{content: "\e922";}
 
 .coming-soon .title{
   font-weight: bold;
-  color: #b01933;
+  color: #aec186;
   line-height: 60px;
   font-size: 62px;
 }
@@ -2085,7 +2085,7 @@ button.search-button:before{content: "\e922";}
   }
 
   [class*="btn"]:not(.btn-small).btn-style-2{
-    border-color: #b01933;
+    border-color: #aec186;
     color: #630e1d;
   }
 
@@ -2118,13 +2118,13 @@ button.search-button:before{content: "\e922";}
   }
 
   [class*="btn"]:not(.btn-small).btn-style-5{
-    background: #b01933;
+    background: #aec186;
     color: #fff;
-    border-color: #b01933;
+    border-color: #aec186;
   }
 
   [class*="btn"].btn-style-5.btn-small{
-    color: #b01933;
+    color: #aec186;
   }
 
   [class*="btn"]:not(.btn-small).btn-style-5:hover{
@@ -2163,7 +2163,7 @@ button.search-button:before{content: "\e922";}
 
   [class*="btn"]:not(.btn-small).btn-style-8{
     color: #ef2245;
-    border-color: #b01933;
+    border-color: #aec186;
   }
 
   [class*="btn"]:not(.btn-small).btn-style-8:hover{
@@ -2390,7 +2390,7 @@ button.search-button:before{content: "\e922";}
 
     input:not([type="submit"]):focus,
     textarea:focus{
-      border-color: #b01933;
+      border-color: #aec186;
       -moz-appearance:none;
       outline:0px none transparent;
     }
@@ -2422,7 +2422,7 @@ button.search-button:before{content: "\e922";}
 
     .required:after{
       content: "*";
-      color: #b01933;
+      color: #aec186;
       display: inline-block;
       margin-left: 2px;
       font-size: 18px;
@@ -2643,7 +2643,7 @@ button.search-button:before{content: "\e922";}
           position: absolute;
           top: 0;
           bottom: 0;
-          background: #b01933;
+          background: #aec186;
           margin: 4px 0;
         }
 
@@ -2737,7 +2737,7 @@ button.search-button:before{content: "\e922";}
         position: absolute;
         right: 20px;
         top: 0;
-        color: #b01933;
+        color: #aec186;
         font-size: 20px;
         line-height: 56px;
       }
@@ -2831,7 +2831,7 @@ button.search-button:before{content: "\e922";}
   }
 
   [class*="table-type"] table tr.bg-cell > *{
-    color: #b01933;
+    color: #aec186;
   }
 
   .table-type-2 tr:last-child > th{
@@ -3087,7 +3087,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .tribe-events-calendar tr td .tribe-events-category-tech-events:hover{
-    background: #b01933;
+    background: #aec186;
     color: #fff;
   }
 
@@ -3294,7 +3294,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .custom-list.style-2 > li > a:hover{
-    color: #b01933;
+    color: #aec186;
   }
 
   .single-post .custom-list > li span.f-left{
@@ -3503,7 +3503,7 @@ button.search-button:before{content: "\e922";}
 
       .our-info:not([class*="style-"]) .info-item > i{
         font-size: 30px;
-        color: #b01933;
+        color: #aec186;
         display: block;
       }
 
@@ -3559,7 +3559,7 @@ button.search-button:before{content: "\e922";}
   }
 
     .our-info.style-3 .info-item > i{
-      color: #b01933;
+      color: #aec186;
       font-size: 13px;
       line-height: 20px;
       margin-right: 8px;
@@ -3688,7 +3688,7 @@ button.search-button:before{content: "\e922";}
   }
 
   hr.style-3{
-    border-color: #b01933;
+    border-color: #aec186;
   }
 
   hr.style-4{
@@ -3925,7 +3925,7 @@ button.search-button:before{content: "\e922";}
       font-size: 20px;
       margin-bottom: 13px;
       display: block;
-      color: #b01933;
+      color: #aec186;
     }
 
   .instagram-carousel:not(:last-child){
@@ -3993,7 +3993,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .accordion .a-title.active{
-    background: #b01933;
+    background: #aec186;
     color: #fff;
   }
 
@@ -4016,7 +4016,7 @@ button.search-button:before{content: "\e922";}
     }
 
     .accordion.style-2 .a-title.active{
-      color: #b01933;
+      color: #aec186;
     }
 
     .accordion.style-2 .a-content{
@@ -4294,7 +4294,7 @@ button.search-button:before{content: "\e922";}
 
     .chose-donate .chose-item:hover,
     .chose-donate .chose-item.active{
-      color: #b01933;
+      color: #aec186;
     }
 
     .call-out:not(.newsletter) .chose-donate .btn:not(:only-child){
@@ -4391,7 +4391,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .dropcap.type-1::first-letter{
-    color: #b01933;
+    color: #aec186;
   }
 
   .dropcap.type-2::first-letter{
@@ -4432,7 +4432,7 @@ button.search-button:before{content: "\e922";}
     .icons-box.style-1 .icons-item .item-box > i{
       margin-bottom: 26px;
       font-size: 60px;
-      color: #b01933;
+      color: #aec186;
       display: block;
     }
 
@@ -4601,7 +4601,7 @@ button.search-button:before{content: "\e922";}
     }
 
     .info-boxes .info-box .box-title a:hover{
-      color: #b01933;
+      color: #aec186;
     }
 
     .info-boxes.style-2 .info-box{
@@ -4835,7 +4835,7 @@ button.search-button:before{content: "\e922";}
     font-size: 160px;
     line-height: 130px;
     display: block;
-    color: #b01933;
+    color: #aec186;
     letter-spacing: -7px;
     position: absolute;
     top: 0;
@@ -5091,7 +5091,7 @@ button.search-button:before{content: "\e922";}
     left: 0;
     top: 0;
     bottom: 0;
-    background: #b01933;
+    background: #aec186;
   }
 
   .pbar-inner > span{
@@ -5346,7 +5346,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .count-number{
-    color: #b01933;
+    color: #aec186;
     font-size: 52px;
     font-style: normal;
     line-height: 1em;
@@ -5430,7 +5430,7 @@ button.search-button:before{content: "\e922";}
       top: 100%;
       left: 0;
       width: 100%;
-      background: #b01933;
+      background: #aec186;
       height: 1px;
 
       opacity: 0;
@@ -5442,7 +5442,7 @@ button.search-button:before{content: "\e922";}
     }
 
     .tabs:not(.style-2) .tabs-nav > li.ui-tabs-active > a{
-      color: #b01933;
+      color: #aec186;
     }
 
     .tabs:not(.style-2) .tabs-nav > li.ui-tabs-active > a:after{
@@ -5466,7 +5466,7 @@ button.search-button:before{content: "\e922";}
 
   .tabs.style-2 .tabs-nav > li.ui-tabs-active > a{
     color: #fff;
-    background: #b01933;
+    background: #aec186;
   }
 
   .tabs.vertical{
@@ -5622,7 +5622,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .team-holder .team-item .member-name:hover a{
-    color: #b01933;
+    color: #aec186;
   }
 
   .team-member{
@@ -5756,7 +5756,7 @@ button.search-button:before{content: "\e922";}
     }
 
       .countdown_section .countdown_amount{
-        color: #b01933;
+        color: #aec186;
         font-family: 'Lora', serif;
         font-size: 52px;
         line-height: 60px;
@@ -5915,8 +5915,8 @@ button.search-button:before{content: "\e922";}
       .widget-calendar table tr td.link.current a,
       .widget-calendar table tr td.link a:hover{
         color: #fff;
-        background: #b01933;
-        border-color: #b01933
+        background: #aec186;
+        border-color: #aec186
       }
 
     .widget-calendar:not(:last-child){
@@ -5991,7 +5991,7 @@ button.search-button:before{content: "\e922";}
     }
 
     .entry .entry-title a:hover{
-      color: #b01933;
+      color: #aec186;
     }
 
     .entry .entry-meta{
@@ -6017,7 +6017,7 @@ button.search-button:before{content: "\e922";}
     }
 
     .entry .entry-meta a:hover{
-      color: #b01933;
+      color: #aec186;
     }
 
     .entry-action{
@@ -6033,7 +6033,7 @@ button.search-button:before{content: "\e922";}
       }
 
       .entry-action > a:hover{
-        color: #b01933;
+        color: #aec186;
       }
 
       .entry-action > a:not(:last-child){
@@ -6083,7 +6083,7 @@ button.search-button:before{content: "\e922";}
         }
 
         .entry-icon:hover{
-          color: #b01933;
+          color: #aec186;
         }
 
   .entry-box.list-type{
@@ -6249,7 +6249,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .event-box .event .event-title a:hover{
-    color: #b01933;
+    color: #aec186;
   }
 
   .event-box .event .event-title:not(:last-child){
@@ -6351,7 +6351,7 @@ button.search-button:before{content: "\e922";}
     }
 
     .event-date .numb{
-      color: #b01933;
+      color: #aec186;
       font-weight: bold;
       font-style: normal;
       line-height: 1em;
@@ -6359,7 +6359,7 @@ button.search-button:before{content: "\e922";}
 
     .event-date .month{
       font-weight: bold;
-      color: #b01933;
+      color: #aec186;
     }
 
     .event-date .day{
@@ -6390,7 +6390,7 @@ button.search-button:before{content: "\e922";}
     .entry .price{
       font-family: 'Lora', sans-serif;
       font-style: italic;
-      color: #b01933;
+      color: #aec186;
       font-size: 24px;
       font-weight: normal;
     }
@@ -6422,7 +6422,7 @@ button.search-button:before{content: "\e922";}
   .event-box.style-3 .event .event-date{
     font-family: 'Lora', sans-serif;
     padding: 14px 20px;
-    background: #b01933;
+    background: #aec186;
     color: #fff;
     letter-spacing: 0.3px;
     font-weight: bold;
@@ -6525,7 +6525,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .cmsmasters_post_date:hover .published > span{
-    color: #b01933;
+    color: #aec186;
   }
 
   .cmsmasters_post_date .published .cmsmasters_post_day{
@@ -6638,7 +6638,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .comment-reply-link:hover{
-    color: #b01933;
+    color: #aec186;
   }
 
   .comment-info .rating > li{
@@ -6725,7 +6725,7 @@ button.search-button:before{content: "\e922";}
 
   .project-title a:hover,
   .project-cats:hover{
-    color: #b01933;
+    color: #aec186;
   }
 
   .project-cats{
@@ -6833,7 +6833,7 @@ button.search-button:before{content: "\e922";}
   }
 
   .product .product-description .product-name a:hover{
-    color: #b01933;
+    color: #aec186;
   }
 
   .product::after{
@@ -7041,7 +7041,7 @@ button.search-button:before{content: "\e922";}
 
   .shopping-cart .products-holder .product .product-title a:hover,
   .shop-cart-form .product .product-title a:hover{
-    color: #b01933;
+    color: #aec186;
   }
 
   .shopping-cart .product-price,
@@ -7181,7 +7181,7 @@ button.search-button:before{content: "\e922";}
 
   table tr.total td,
   table tr.total th{
-    color: #b01933;
+    color: #aec186;
   }
 
   .recent-order tr th.order-view{
@@ -7370,7 +7370,7 @@ button.search-button:before{content: "\e922";}
     }
 
     .hidden-section .account-action > a:hover{
-      color: #b01933;
+      color: #aec186;
     }
 
     .hidden-section .login-form-footer{
