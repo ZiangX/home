@@ -800,7 +800,7 @@
 
 			$(document).ready(function() {
 
-				var myCenter = new google.maps.LatLng(30.2259488, -97.7145152);
+				var myCenter = new google.maps.LatLng(45.494477,-73.578892);
 
 				function loadMap() {
 				  	var mapProp = {
