@@ -816,27 +816,31 @@ a:hover .tooltip{
   align-items: center;
 }
 
-  .header:not(.style-2):not(.style-3) .logo{
-    position: absolute;
-    top: 0;
-    left: 60px;
-    display: inline-block;
-  }
+.header:not(.style-2):not(.style-3) .logo{
+  position: absolute;
+  top: 0;
+  left: 60px;
+  display: inline-block;
+}
 
-  .header-btns{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    align-items: center;
-    margin: -15px -15px;
-  }
+.header-btns{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  margin: -15px -15px;
+}
 
-  .header-btns > .head-btn{
-    padding: 15px 15px;
-  }
+.header-btns > .head-btn{
+  padding: 15px 15px;
+}
 
+.green-olive-logo {
+  width: 150px;
+  height: 150px;
+}
 /* Header 2 */
 
 .header.style-2,
@@ -5617,6 +5621,7 @@ button.search-button:before{content: "\e922";}
   .team-holder .team-item .member-name{
     font-weight: bold;
     font-style: normal;
+    letter-spacing: 3px;
   }
 
   .team-holder .team-item .member-info:not(:last-child),
