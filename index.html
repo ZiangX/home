@@ -10,7 +10,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 
-<title>Green Olive</title>
+<title>Chat</title>
 
 <!--meta info-->
 <meta charset="utf-8">
@@ -52,8 +52,14 @@
   </div>
 
   <script>
+    const queryString = window.location.search;
+    console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    const page_id = urlParams.get('page_id')
+    console.log(page_id);
+    
     var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "108414698274832");
+    chatbox.setAttribute("page_id", page_id);
     chatbox.setAttribute("attribution", "biz_inbox");
 
     window.fbAsyncInit = function() {
