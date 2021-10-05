@@ -55,13 +55,16 @@
     const queryString = window.location.search;
     console.log(queryString);
     const urlParams = new URLSearchParams(queryString);
-    const page_id = urlParams.get('page_id')
-    console.log(page_id);
+    const page_id = urlParams.get('page_id');
+    const listing_id = urlParams.get('listing_id');
+    
+    console.log(page_id, listing_id);
     
     var chatbox = document.getElementById('fb-customer-chat');
     chatbox.setAttribute("page_id", page_id);
     chatbox.setAttribute("attribution", "biz_inbox");
-
+    chatbox.setAttribute("ref", listing_id);
+    
     window.fbAsyncInit = function() {
       FB.init({
         xfbml            : true,
