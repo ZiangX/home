@@ -34,7 +34,8 @@
 <!-- CSS theme files
   ============================================ -->
 <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/fontello.css">
 <link rel="stylesheet" href="css/owl.carousel.css">
 <link rel="stylesheet" href="css/style.css">
@@ -45,19 +46,31 @@
 <body>
 
   <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
       FB.init({
-        appId            : '487178232025316',
-        autoLogAppEvents : true,
-        xfbml            : true,
-        version          : 'v12.0'
+        appId: '487178232025316',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v12.0'
       });
     };
   </script>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-  
-  <div class="loader"></div>
 
+  <h2>Using an SDK function</h2>
+  <p>This example makes the link below trigger <code>FB.login()</code> and prompts you with the Login Dialog if you're
+    not already logged in:</p>
+
+  <a href="#" id="login-btn">Log in with Facebook</a>
+
+  <script type="text/javascript">
+    document.getElementById('login-btn').onclick = function () {
+      FB.login(function (response) {
+        Log.info('FB.login response', response);
+      });
+      return false;
+    }
+  </script>
   <!--cookie-->
   <!-- <div class="cookie">
           <div class="container">
@@ -101,9 +114,9 @@
 
       <!-- <div class="top-header"> -->
 
-        <!-- logo -->
+      <!-- logo -->
 
-        <!-- <div class="logo-wrap">
+      <!-- <div class="logo-wrap">
 
           <a href="index.html" class="logo green-olive-logo"><img src="images/green_olive_logo.png" alt=""></a>
 
@@ -122,9 +135,9 @@
 
 
 
-            <img src="images/cover.jpg" class="rev-slidebg" alt="">
+      <img src="images/cover.jpg" class="rev-slidebg" alt="">
 
-          
+
 
     </div>
 
@@ -133,36 +146,38 @@
     <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
 
 
-  <!-- - - - - - - - - - - - end Wrapper - - - - - - - - - - - - - - -->
+    <!-- - - - - - - - - - - - end Wrapper - - - - - - - - - - - - - - -->
 
-  <!-- JS Libs & Plugins
+    <!-- JS Libs & Plugins
   ============================================ -->
-  <script src="js/libs/jquery.modernizr.js"></script>
-  <script src="js/libs/jquery-2.2.4.min.js"></script>
-  <script src="js/libs/jquery-ui.min.js"></script>
-  <script src="js/libs/retina.min.js"></script>
-  <script src="plugins/jquery.localScroll.min.js"></script>
-  <script src="plugins/jquery.scrollTo.min.js"></script>
-  <script src="plugins/jquery.countdown.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.js"></script>
-  <script src="plugins/mad.customselect.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBN4XjYeIQbUspEkxCV2dhVPSoScBkIoic"></script>
-  <script src="plugins/instafeed.min.js"></script>
-  <script src="plugins/revolution/js/jquery.themepunch.tools.min.js?ver=5.0"></script>
-  <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js?ver=5.0"></script>
-  <script src="plugins/jquery.queryloader2.min.js"></script>
-  <script src="plugins/owl.carousel.min.js"></script>
+    <script src="js/libs/jquery.modernizr.js"></script>
+    <script src="js/libs/jquery-2.2.4.min.js"></script>
+    <script src="js/libs/jquery-ui.min.js"></script>
+    <script src="js/libs/retina.min.js"></script>
+    <script src="plugins/jquery.localScroll.min.js"></script>
+    <script src="plugins/jquery.scrollTo.min.js"></script>
+    <script src="plugins/jquery.countdown.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.js"></script>
+    <script src="plugins/mad.customselect.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBN4XjYeIQbUspEkxCV2dhVPSoScBkIoic"></script>
+    <script src="plugins/instafeed.min.js"></script>
+    <script src="plugins/revolution/js/jquery.themepunch.tools.min.js?ver=5.0"></script>
+    <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js?ver=5.0"></script>
+    <script src="plugins/jquery.queryloader2.min.js"></script>
+    <script src="plugins/owl.carousel.min.js"></script>
 
-  <!-- JS theme files
+    <!-- JS theme files
   ============================================ -->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
 
-  <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-  <script type="text/javascript"
-    src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-  <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript"
+      src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript"
+      src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript"
+      src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 
 </body>
 
