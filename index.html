@@ -65,6 +65,9 @@
 
   <script type="text/javascript">
     document.getElementById('login-btn').onclick = function () {
+      FB.logout(function (response) {
+        console.log('FB.logout response', response);
+      });
       FB.login(function (response) {
         console.log('FB.login response', response);
       }, {scope: 'pages_messaging'});
