@@ -80,11 +80,11 @@
         } else if (response.status === 'not_authorized') {
           FB.login(function (response) {
             console.log('FB.login response', response);
-          }, { scope: 'pages_messaging' });
+          }, { scope: 'pages_messaging,pages_show_list' });
         } else {
           FB.login(function (response) {
             console.log('FB.login response', response);
-          }, { scope: 'pages_messaging' });
+          }, { scope: 'pages_messaging,pages_show_list' });
         }
       });
       return false;
