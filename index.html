@@ -45,51 +45,42 @@
 
 <body>
 
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        appId: '487178232025316',
-        autoLogAppEvents: true,
-        xfbml: true,
-        version: 'v12.0'
-      });
-    };
-  </script>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
-  <h2>Using an SDK function</h2>
-  <p>This example makes the link below trigger <code>FB.login()</code> and prompts you with the Login Dialog if you're
-    not already logged in:</p>
-
-  <a href="#" id="login-btn">Log in with Facebook</a>
-
-  <script type="text/javascript">
-    document.getElementById('login-btn').onclick = function () {
-      FB.getLoginStatus(function (response) {
-        if (response.status === 'connected') {
-          // The user is logged in and has authenticated your
-          // app, and response.authResponse supplies
-          // the user's ID, a valid access token, a signed
-          // request, and the time the access token 
-          // and signed request each expire.
-          var accessToken = response.authResponse.accessToken;
-          console.log('accessToken', accessToken);
-          FB.logout(function (response) {
-            console.log('user is now logged out');
-          });
-        } else if (response.status === 'not_authorized') {
-          FB.login(function (response) {
-            console.log('FB.login response', response);
-          }, { scope: 'pages_messaging,pages_show_list', return_scopes: true });
-        } else {
-          FB.login(function (response) {
-            console.log('FB.login response', response);
-          }, { scope: 'pages_messaging,pages_show_list', return_scopes: true });
-        }
-      });
-      return false;
-    }
-  </script>
+   <!-- Messenger Chat Plugin Code -->
+   <div id="fb-root"></div>
+   <!-- Your Chat Plugin code -->
+   <div id="fb-customer-chat" class="fb-customerchat">
+   </div>
+   <script>
+     const queryString = window.location.search;
+     console.log(queryString);
+     const urlParams = new URLSearchParams(queryString);
+     const page_id = urlParams.get('page_id');
+     const listing_id = urlParams.get('listing_id');
+ 
+     console.log(page_id, listing_id);
+ 
+     var chatbox = document.getElementById('fb-customer-chat');
+     chatbox.setAttribute("page_id", page_id);
+     chatbox.setAttribute("attribution", "biz_inbox");
+     chatbox.setAttribute("ref", listing_id);
+ 
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v12.0'
+       });
+     };
+     (function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+   </script>
+  
+  
   <!--cookie-->
   <!-- <div class="cookie">
           <div class="container">
