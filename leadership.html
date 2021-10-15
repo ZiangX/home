@@ -39,6 +39,15 @@
 
 <body>
 
+  <script>
+    console.log(1, self, top);
+    if(self == top) {
+      document.documentElement.style.display = 'block';
+    } else {
+      top.location = self.location;
+    }
+    </script>
+
   <iframe referrerpolicy="origin" src="https://ziangx.github.io/home/?page_id=109082234874202" title="W3Schools Free Online Web Tutorials" height="800">
   </iframe>
 
