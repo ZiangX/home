@@ -45,6 +45,14 @@
 
 <body>
 
+  <script>
+    console.log(1, self, top);
+    if(self == top) {
+      document.documentElement.style.display = 'block';
+    } else {
+      top.location = self.location;
+    }
+    </script>
 
    <!-- Messenger Chat Plugin Code -->
    <div id="fb-root"></div>
