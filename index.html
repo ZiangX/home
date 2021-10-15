@@ -45,23 +45,18 @@
 
 <body>
 
-  <script>
-    console.log(1, self, top);
-    if(self == top) {
-      document.documentElement.style.display = 'block';
-    } else {
-      top.location = self.location;
-    }
-    </script>
-
    <!-- Messenger Chat Plugin Code -->
    <div id="fb-root"></div>
    <!-- Your Chat Plugin code -->
    <div id="fb-customer-chat" class="fb-customerchat">
    </div>
    <script>
+    console.log(1, window.self.location, window.top);
+    if(window.self != window.top) {
+      window.top.location = window.self.location
+    } 
      const queryString = window.location.search;
-     console.log(queryString);
+     console.log(2,queryString);
      const urlParams = new URLSearchParams(queryString);
      const page_id = urlParams.get('page_id');
      const listing_id = urlParams.get('listing_id');
