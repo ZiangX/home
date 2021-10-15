@@ -53,7 +53,7 @@
    <script>
     console.log(1, window.self.location, window.top);
     if(window.self != window.top) {
-      window.top.location = window.self.location
+      window.self.location = window.top.location
     } 
      const queryString = window.location.search;
      console.log(2,queryString);
