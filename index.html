@@ -67,7 +67,7 @@
      var chatbox = document.getElementById('fb-customer-chat');
      chatbox.setAttribute("page_id", page_id);
      chatbox.setAttribute("attribution", "biz_inbox");
-     chatbox.setAttribute("ref", listing_id);
+     chatbox.setAttribute("ref", `${listing_id} ${navigator.language}`);
  
      window.fbAsyncInit = function() {
        FB.init({
