@@ -62,12 +62,12 @@
      const page_id = urlParams.get('page_id');
      const listing_id = urlParams.get('listing_id');
  
-     console.log('change back to numen', `${listing_id} ${navigator.language}`, typeof `${listing_id} ${navigator.language}`);
+     console.log('change back to num-en', `${listing_id} ${navigator.language}`, typeof `${listing_id} ${navigator.language}`);
 //  1881 en-CA
      var chatbox = document.getElementById('fb-customer-chat');
      chatbox.setAttribute("page_id", page_id);
      chatbox.setAttribute("attribution", "biz_inbox");
-     chatbox.setAttribute("ref", "1881en");
+     chatbox.setAttribute("ref", "1881-en");
  
      window.fbAsyncInit = function() {
        FB.init({
