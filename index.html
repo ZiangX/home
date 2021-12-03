@@ -63,11 +63,11 @@
      const listing_id = urlParams.get('listing_id');
  
      console.log(`${listing_id} ${navigator.language}`, typeof `${listing_id} ${navigator.language}`);
- 
+//  1881 en-CA
      var chatbox = document.getElementById('fb-customer-chat');
      chatbox.setAttribute("page_id", page_id);
      chatbox.setAttribute("attribution", "biz_inbox");
-     chatbox.setAttribute("ref", `${listing_id} ${navigator.language}`);
+     chatbox.setAttribute("ref", "1881 en-CA");
  
      window.fbAsyncInit = function() {
        FB.init({
