@@ -51,19 +51,17 @@
    <!-- Your Chat Plugin code -->
    <div id="fb-customer-chat" class="fb-customerchat">
    </div>
-   <script>
+   <!-- <script>
     // console.log(1, window.self.location, window.top);
     // if(window.self != window.top) {
     //   window.self.location = window.top.location
     // } 
      const queryString = window.location.search;
-     console.log(2,queryString);
+
      const urlParams = new URLSearchParams(queryString);
      const page_id = urlParams.get('page_id');
      const listing_id = urlParams.get('listing_id');
  
-     console.log('change back to dot dot -', `${listing_id} ${navigator.language}`, typeof `${listing_id} ${navigator.language}`);
-//  1881 en-CA
      var chatbox = document.getElementById('fb-customer-chat');
      chatbox.setAttribute("page_id", page_id);
      chatbox.setAttribute("attribution", "biz_inbox");
@@ -82,9 +80,31 @@
        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
-   </script>
+   </script> -->
   
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '487178232025316',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v12.0'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
   <!--cookie-->
   <!-- <div class="cookie">
           <div class="container">
