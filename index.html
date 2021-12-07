@@ -122,7 +122,7 @@
         'Thanks for logging in, ' + response.name + '!';
     });
     FB.logout(function(response) {
-   // Person is now logged out
+    // Person is now logged out
     });
   }
 
@@ -171,7 +171,7 @@
     <script type="text/javascript"
       src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 
-    <fb:login-button scope="public_profile,pages_show_list,pages_manage_metadata" onlogin="checkLoginState();">
+    <fb:login-button scope="public_profile,pages_show_list,pages_manage_metadata,pages_messaging" onlogin="checkLoginState();">
     </fb:login-button>
 
     <div id="status">
