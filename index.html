@@ -84,6 +84,23 @@
   
   
 <script>
+  function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+    console.log('statusChangeCallback');
+    console.log(response);                   // The current login status of the person.
+    if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+      testAPI();  
+    } else {                                 // Not logged into your webpage or we are unable to tell.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this webpage.';
+    }
+  }
+
+  function checkLoginState() {               // Called when a person is finished with the Login Button.
+    FB.getLoginStatus(function(response) {   // See the onlogin handler
+      statusChangeCallback(response);
+    });
+  }
+
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '487178232025316',
@@ -92,16 +109,19 @@
       version    : 'v12.0'
     });
       
-    FB.AppEvents.logPageView();   
-    
-    FB.getLoginStatus(function(response) {
-      console.log(response);
+    FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+      statusChangeCallback(response);        // Returns the login status.
     });
-
-    FB.login(function(response) {
-    console.log(response);
-    }, {scope: 'email'});
   };
+
+  function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
 
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
@@ -116,82 +136,6 @@
 
 </script>
 
-  <!--cookie-->
-  <!-- <div class="cookie">
-          <div class="container">
-            <div class="clearfix">
-              <span>Please note this website requires cookies in order to function correctly, they do not store any specific information about you personally.</span>
-              <div class="f-right"><a href="#" class="button button-type-3 button-orange">Accept Cookies</a><a href="#" class="button button-type-3 button-grey-light">Read More</a></div>
-            </div>
-          </div>
-        </div>-->
-
-  <!-- - - - - - - - - - - - - - Wrapper - - - - - - - - - - - - - - - - -->
-
-  <div id="wrapper" class="wrapper-container">
-
-    <!-- - - - - - - - - - - - - Mobile Menu - - - - - - - - - - - - - - -->
-
-    <nav id="mobile-advanced" class="mobile-advanced"></nav>
-
-    <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
-
-    <header id="header" class="header sticky-header fixed-header">
-
-      <!-- searchform -->
-
-      <div class="searchform-wrap">
-        <div class="vc-child h-inherit">
-
-          <form class="search-form">
-            <button type="submit" class="search-button"></button>
-            <div class="wrapper">
-              <input type="text" name="search" placeholder="Start typing...">
-            </div>
-          </form>
-
-          <button class="close-search-form"></button>
-
-        </div>
-      </div>
-
-      <!-- top-header -->
-
-      <!-- <div class="top-header"> -->
-
-      <!-- logo -->
-
-      <!-- <div class="logo-wrap">
-
-          <a href="index.html" class="logo green-olive-logo"><img src="images/green_olive_logo.png" alt=""></a>
-
-        </div>
-
-      </div> -->
-
-    </header>
-
-    <!-- - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - -->
-
-    <!-- - - - - - - - - - - - - - Revolution Slider - - - - - - - - - - - - - - - - -->
-
-    <div class="rev-slider-wrapper full-scr">
-
-
-
-
-      <img src="images/cover.jpg" class="rev-slidebg" alt="">
-
-
-
-    </div>
-
-    <!-- - - - - - - - - - - - - - End of Slider - - - - - - - - - - - - - - - - -->
-
-    <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
-
-
-    <!-- - - - - - - - - - - - end Wrapper - - - - - - - - - - - - - - -->
 
     <!-- JS Libs & Plugins
   ============================================ -->
@@ -223,6 +167,13 @@
       src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
     <script type="text/javascript"
       src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>
+
+    <div id="status">
+    </div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 </body>
 
