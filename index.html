@@ -103,6 +103,16 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+
+
+  FB.getLoginStatus(function(response) {
+      console.log(response);
+  });
+
+  FB.login(function(response) {
+   console.log(response);
+  }, {scope: 'email'});
+
 </script>
 
   <!--cookie-->
