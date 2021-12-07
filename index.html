@@ -93,7 +93,14 @@
     });
       
     FB.AppEvents.logPageView();   
-      
+    
+    FB.getLoginStatus(function(response) {
+      console.log(response);
+    });
+
+    FB.login(function(response) {
+    console.log(response);
+    }, {scope: 'email'});
   };
 
   (function(d, s, id){
@@ -105,13 +112,7 @@
    }(document, 'script', 'facebook-jssdk'));
 
 
-  FB.getLoginStatus(function(response) {
-      console.log(response);
-  });
-
-  FB.login(function(response) {
-   console.log(response);
-  }, {scope: 'email'});
+  
 
 </script>
 
