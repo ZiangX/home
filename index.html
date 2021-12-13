@@ -121,9 +121,11 @@
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
     });
-    // FB.logout(function(response) {
-    // // Person is now logged out
-    // });
+    alert('about to logout')
+    FB.logout(function(response) {
+    // Person is now logged out
+    alert('you are logged out')
+    });
   }
 
   (function(d, s, id){
