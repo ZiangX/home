@@ -85,6 +85,7 @@
       console.log('print out fb.hideDialog', FB.CustomerChat.hideDialog);
       hideDialog = FB.CustomerChat.hideDialog;
       console.log('print new hideDialog', hideDialog);
+      FB.Event.subscribe('customerchat.dialogShow', ()=>console.log('dialog show webhook'));
      };
 
      console.log('print new hideDialog outside', hideDialog);
