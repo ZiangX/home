@@ -79,6 +79,8 @@
 
       // Hide the dialog
       // FB.CustomerChat.hideDialog();
+      console.log('print out fb',FB)
+      console.log('print out fb.hideDialog', FB.CustomerChat.hideDialog);
      };
 
  
@@ -90,9 +92,6 @@
        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
-
-     alert('About to hide the dialog')
-    FB.CustomerChat.hideDialog(); 
 
    </script>
   
