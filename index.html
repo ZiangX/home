@@ -65,6 +65,8 @@
      chatbox.setAttribute("attribution", "biz_inbox");
      chatbox.setAttribute("ref", `${listing_id}-${navigator.language}`);
  
+     let hideDialog;
+
      window.fbAsyncInit = function() {
        FB.init({
          xfbml            : true,
@@ -81,9 +83,12 @@
       // FB.CustomerChat.hideDialog();
       console.log('print out fb',FB)
       console.log('print out fb.hideDialog', FB.CustomerChat.hideDialog);
+      hideDialog = FB.CustomerChat.hideDialog;
+      console.log('print new hideDialog', hideDialog);
      };
 
- 
+     console.log('print new hideDialog outside', hideDialog);
+     
 
      (function(d, s, id) {
        var js, fjs = d.getElementsByTagName(s)[0];
@@ -154,7 +159,7 @@
 
   </script> -->
 
-  <button onclick="()=>alert('iam clicked')">Click me</button>
+  <button onclick="hideDialog()">Click me</button>
 
 
     <!-- JS Libs & Plugins
