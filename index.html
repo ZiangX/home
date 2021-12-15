@@ -134,11 +134,14 @@
         document.getElementById('status').innerHTML =
           'Thanks for logging in, ' + response.name + '!';
       });
-      // alert('about to logout')
-      // FB.logout(function(response) {
-      // // Person is now logged out
-      // alert('you are logged out')
-      // });
+      
+    }
+
+    logoutFbUser = () => {
+      FB.logout(function(response) {
+      // Person is now logged out
+      alert('you are logged out')
+      });
     }
 
     (function(d, s, id){
@@ -151,7 +154,7 @@
 
   </script>
 
-  <button onclick="hideDialog()">Click me</button>
+  <button onclick="logoutFbUser()">Logout</button>
 
 
     <!-- JS Libs & Plugins
