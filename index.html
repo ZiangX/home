@@ -147,6 +147,12 @@
       });
     }
 
+    loginManually = () => {
+      FB.login(function(response) {
+        // Original FB.login code
+      }, { auth_type: 'reauthenticate' })
+    }
+
     (function(d, s, id){
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) {return;}
@@ -158,6 +164,7 @@
   </script>
 
   <button onclick="logoutFbUser()">Logout</button>
+  <button onclick="loginManually()">Login everytime</button>
 
 
     <!-- JS Libs & Plugins
