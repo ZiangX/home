@@ -118,6 +118,7 @@
       FB.init({
         appId      : '487178232025316',
         cookie     : false,
+        localStorage: flase,
         xfbml      : true,
         version    : 'v12.0'
       });
@@ -136,7 +137,7 @@
       });
       
     }
-    
+
     logoutFbUser = () => {
       alert('you clicking logout')
       FB.logout(function(response) {
