@@ -53,7 +53,7 @@
    </div>
 
    <!-- Show chat plugin -->
-    <script>
+    <!-- <script>
      const queryString = window.location.search;
 
      const urlParams = new URLSearchParams(queryString);
@@ -81,15 +81,9 @@
 
       // Hide the dialog
       // FB.CustomerChat.hideDialog();
-      console.log('print out fb',FB)
-      console.log('print out fb.hideDialog', FB.CustomerChat.hideDialog);
       hideDialog = FB.CustomerChat.hideDialog;
-      console.log('print new hideDialog', hideDialog);
       FB.Event.subscribe('customerchat.dialogShow', ()=>console.log('dialog show webhook'));
      };
-
-     console.log('print new hideDialog outside', hideDialog);
-     
 
      (function(d, s, id) {
        var js, fjs = d.getElementsByTagName(s)[0];
@@ -99,10 +93,10 @@
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
 
-   </script>
+   </script> -->
   
   <!-- Show facebook login -->
-  <!-- <script>
+   <script>
     function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
       console.log('statusChangeCallback');
       console.log(response);                   // The current login status of the person.
@@ -153,12 +147,9 @@
       js = d.createElement(s); js.id = id;
       js.src = "https://connect.facebook.net/en_US/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    }(document, 'script', 'facebook-jssdk'));   
 
-
-    
-
-  </script> -->
+  </script>
 
   <button onclick="hideDialog()">Click me</button>
 
