@@ -723,6 +723,7 @@
 
 	.header .top-header{
 		padding: 15px;
+		padding-bottom: 0;
 	}
 
 	.header .logo{
