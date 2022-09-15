@@ -206,11 +206,6 @@
 				transform: translateX(0);
 	}
 
-	span.quote {
-		/* padding-left: 90px !important; */
-		/* padding-right: 20px !important; */
-		line-height: 30px !important;
-	}
 	#wrapper.active .mobile-advanced{
 		pointer-events: auto;
 
