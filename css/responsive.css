@@ -206,6 +206,11 @@
 				transform: translateX(0);
 	}
 
+	span.quote {
+		/* padding-left: 90px !important; */
+		/* padding-right: 20px !important; */
+		line-height: 30px !important;
+	}
 	#wrapper.active .mobile-advanced{
 		pointer-events: auto;
 
@@ -717,6 +722,9 @@
 	    padding-bottom: 131%;
 	}
 
+	#mobile-break {
+		display: none;
+	}
 }
 
 @media (max-width:769px){

@@ -135,7 +135,7 @@ website:   	http://www.themepunch.com
 	text-align:center;
 	padding-top:80px;
 }
-
+/* 
 .rev-slider >ul,
 .rev-slider-wrapper >ul,
 .tp-revslider-mainul >li,
@@ -158,10 +158,10 @@ website:   	http://www.themepunch.com
 	background-position:0px 0px;
 	text-indent: 0em;
 	top:0px;left:0px;
-}
+} */
 
 
-.tp-revslider-mainul >li,
+/* .tp-revslider-mainul >li,
 .rev-slider >ul >li,
 .rev-slider >ul >li:before,
 .tp-revslider-mainul >li:before,
@@ -170,7 +170,7 @@ website:   	http://www.themepunch.com
 .tp-revslider-mainul >li,
 .tp-simpleresponsive >ul >li { 
 	visibility:hidden; 
-}
+} */
 
 .tp-revslider-slidesli,
 .tp-revslider-mainul	{	
